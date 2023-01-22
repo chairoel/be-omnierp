@@ -2,6 +2,7 @@
 # Requirement
 - maven
 - java 17+
+- postgres 
 # How to install liblary
 ``mvn clean install``
 # How to run
