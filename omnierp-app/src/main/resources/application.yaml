@@ -1,11 +1,14 @@
 
 config:
-  secretKey: '404E635266556A58X2X272357538782F413F4428472B4B6250645367566B5970'
+  secretKey: 'K09E635266556A58X2X272357538782F413F44DAS472B4B6250645367566B5970'
 
-server:
-  port: 9000
+#server:
+#  port: 9000
 
 spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
   datasource:
     url: jdbc:postgresql://localhost:5432/omnierpdb
     username: postgres
@@ -18,3 +21,4 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
+

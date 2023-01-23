@@ -3,6 +3,11 @@
 - maven
 - java 17+
 - postgres 
+# Tehnology
+- Spring Boot 3
+- Spring Security 6
+- Lombok 
+- Jwt Token
 # How to install liblary
 ``mvn clean install``
 # How to run

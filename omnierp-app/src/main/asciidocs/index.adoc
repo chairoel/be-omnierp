@@ -1,0 +1,45 @@
+
+
+
+= Module Auth API
+
+=== REGISTER API
+
+|===
+|POST |/api/v1/user/regis
+
+| Request Body
+| {
+"firstname": "Kuda";
+"lastname": "Nil";
+"email": "kuda.nil@gmail.com";
+"roles": ["USER"];
+"password": "password";
+}
+
+| Response Body
+| {
+"email": "test.test@gmail.com",
+"password": "password"
+}
+|===
+
+
+=== LOGIN API
+
+|===
+|POST | /api/v1/user/login
+
+|Request Body
+| {
+"email": "test.test@gmail.com",
+"password": "password"
+}
+
+|Response Body
+| {
+"jwtToken": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpc2Euc3ViYW5pQGdtYWlsLmNvbSIsImlhdCI6MTY3NDM4MjIyMCwiZXhwIjoxNjc0MzgyMjgwfQ.iKQOrNn5-6tGRLILz7sHz4sLOT3JN80KUBUl729yTVw"
+}
+
+
+|===

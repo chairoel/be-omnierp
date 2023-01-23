@@ -1,4 +1,4 @@
-package com.fluex404.omnierpapp;
+package com.fluex404.omnierpapp.moduleauth;
 
 import com.fluex404.omnierpauth.dto.UserAuthenticationResponseDTO;
 import com.fluex404.omnierpauth.dto.UserLoginRequestDTO;
