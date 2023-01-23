@@ -21,6 +21,8 @@
     <modules>
         <module>omnierp-auth</module>
         <module>omnierp-app</module>
+        <module>omnierp-user-management</module>
+        <module>omnierp-persistence</module>
     </modules>
 
     <properties>
