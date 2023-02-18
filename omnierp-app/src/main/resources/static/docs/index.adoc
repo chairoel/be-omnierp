@@ -4,28 +4,47 @@
 = Module Auth API
 
 === REGISTER API
-
+api ini digunakan untuk registrasi user baru
 |===
 |POST |/api/v1/user/regis
 
 | Request Body
-| {
+| `{
 "firstname": "Kuda";
 "lastname": "Nil";
 "email": "kuda.nil@gmail.com";
 "roles": ["USER"];
 "password": "password";
-}
+}`
 
 |Response Body
-| {
+| `{
 "jwtToken": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpc2Euc3ViYW5pQGdtYWlsLmNvbSIsImlhdCI6MTY3NDM4MjIyMCwiZXhwIjoxNjc0MzgyMjgwfQ.iKQOrNn5-6tGRLILz7sHz4sLOT3JN80KUBUl729yTVw"
-}
+}`
 |===
 
 
 === LOGIN API
+api ini digunakakn untuk login ke sistem dan akan mendapakan token, yang nantinya dibawa ketika mengakses api lain
+|===
+|POST | /api/v1/user/login
 
+|Request Body
+| `{
+"email": "test.test@gmail.com",
+"password": "password"
+}`
+
+|Response Body
+| `{
+"jwtToken": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpc2Euc3ViYW5pQGdtYWlsLmNvbSIsImlhdCI6MTY3NDM4MjIyMCwiZXhwIjoxNjc0MzgyMjgwfQ.iKQOrNn5-6tGRLILz7sHz4sLOT3JN80KUBUl729yTVw"
+}`
+
+
+|===
+
+=== ROLE GET LOGIN API
+api ini digunakan untuk melihat semua list roles dan privilages nya
 |===
 |POST | /api/v1/user/login
 
